@@ -1,0 +1,23 @@
+{
+  "name": "monorepo-starter",
+  "private": true,
+  "scripts": {
+    "start:dashboard": "yarn workspace dashboard start"
+  },
+  "dependencies": {
+    "husky": "4.2.5",
+    "lerna": "3.22.1",
+    "prettier": "2.0.5",
+    "pretty-quick": "2.0.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "workspaces": [
+    "./apps/*",
+    "./packages/*",
+    "./lib/**/pkg"
+  ]
+}

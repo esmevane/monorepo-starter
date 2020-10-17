@@ -1,0 +1,7 @@
+{
+  "name": "example-package",
+  "version": "0.0.0",
+  "module": "index.ts",
+  "private": true,
+  "dependencies": {}
+}
